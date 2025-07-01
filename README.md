@@ -26,6 +26,6 @@ python main.py http://example.com
 
 
 ## todo
-1、fuzz、ssrf、cmdinj模块是ai直接生成的，逻辑存在问题，待优化
-2、增加其他漏洞扫描模块
-3、报告支持关键词高亮
+1、fuzz、ssrf、cmdinj模块是ai直接生成的，逻辑存在问题，待优化</br>
+2、增加其他漏洞扫描模块</br>
+3、报告支持关键词高亮</br>
