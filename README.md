@@ -24,13 +24,13 @@ python main.py http://example.com
 └─ reporter.py        <-- 报告生成模块</br>
 
 ## 扫描逻辑
-1、cors：构造恶意 Origin 头，检查响应中是否回显 Access-Control-Allow-Origin: *
-2、死链：提取网页中引用的 JS 文件，检测是否存在无法访问的第三方 JS
-3、目录遍历：直接在url末尾怼关键词
-4、xss：构造无害但高识别度的 XSS payload，如[u]65535src[/u] (实际换成尖括号 )，检测返回包是否出现特殊标识
-5、sql注入：注入 payload 到 URL 参数中，两个判断逻辑
-- 检测返回内容中是否包含数据库错误信息
-- 参数值后分别加上单引号、双引号，根据响应长度对比判断
+1、cors：构造恶意 Origin 头，检查响应中是否回显 Access-Control-Allow-Origin:</br>
+2、死链：提取网页中引用的 JS 文件，检测是否存在无法访问的第三方 JS</br>
+3、目录遍历：直接在url末尾怼关键词</br>
+4、xss：构造无害但高识别度的 XSS payload，如【u】,【a】 (实际换成尖括号 )，检测返回包是否出现标识</br>
+5、sql注入：注入 payload 到 URL 参数中，两个判断逻辑</br>
+- 检测返回内容中是否包含数据库错误信息</br>
+- 参数值后分别加上单引号、双引号，根据响应长度对比判断</br>
 
 ## todo
 1、fuzz、ssrf、cmdinj模块是ai直接生成的，逻辑存在问题，待优化</br>
