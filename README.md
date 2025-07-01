@@ -20,7 +20,7 @@ python main.py http://example.com
 ├─ utils/</br>
 │   ├─ __init__.py</br>
 │   ├─ requester.py  请求封装模块</br>
-│   └─ logger.py </br>  日志生成模块
+│   └─ logger.py   日志生成模块</br>
 └─ reporter.py    <-- 报告生成模块</br>
 
 
