@@ -3,25 +3,25 @@
 python main.py http://example.com
 
 ## 结构说明
-漏扫工具/
-│
-├─ main.py
-├─ crawler.py    <-- 爬虫模块
-├─ scanner/   <-- 漏洞扫描模块
-│   ├─ __init__.py
-│   ├─ cmdinj.py   命令执行漏洞
-│   ├─ cors.py    cors漏洞
-│   ├─ deadjs.py   死链扫描
-│   ├─ dirtrav.py   目录遍历
-│   ├─ fuzz.py   fuzz模块
-│   ├─ sqli.py    sql注入漏洞
-│   ├─ ssrf.py   ssrf漏洞
-│   ├─ xss.py      xss漏洞
-├─ utils/
-│   ├─ __init__.py
-│   ├─ requester.py
-│   └─ logger.py
-└─ reporter.py    <-- 报告生成模块
+漏扫工具:
+</br>
+├─ main.py</br>
+├─ crawler.py    <-- 爬虫模块</br>
+├─ scanner/   <-- 漏洞扫描模块</br>
+│   ├─ __init__.py</br>
+│   ├─ cmdinj.py   命令执行漏洞</br>
+│   ├─ cors.py    cors漏洞</br>
+│   ├─ deadjs.py   死链扫描</br>
+│   ├─ dirtrav.py   目录遍历</br>
+│   ├─ fuzz.py   fuzz模块</br>
+│   ├─ sqli.py    sql注入漏洞</br>
+│   ├─ ssrf.py   ssrf漏洞</br>
+│   ├─ xss.py      xss漏洞</br>
+├─ utils/</br>
+│   ├─ __init__.py</br>
+│   ├─ requester.py  请求封装模块</br>
+│   └─ logger.py </br>  日志生成模块
+└─ reporter.py    <-- 报告生成模块</br>
 
 
 
